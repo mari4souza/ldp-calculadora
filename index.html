@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main>
+        <h1>Calculadora</h1>
+
+        <section class="display">
+            <p class="resultado"></p>
+        </section>
+
+        <section class="digitos">
+            <div class="digito" onclick="adicionarDigito('1')">1</div>
+            <div class="digito" onclick="adicionarDigito('2')">2</div>
+            <div class="digito" onclick="adicionarDigito('3')">3</div>
+            <div class="digito" onclick="adicionarOperador('+')">+</div>
+            <div class="digito" onclick="adicionarDigito('4')">4</div>
+            <div class="digito" onclick="adicionarDigito('5')">5</div>
+            <div class="digito" onclick="adicionarDigito('6')">6</div>
+            <div class="digito" onclick="adicionarOperador('-')">-</div>
+            <div class="digito" onclick="adicionarDigito('7')">7</div>
+            <div class="digito" onclick="adicionarDigito('8')">8</div>
+            <div class="digito" onclick="adicionarDigito('9')">9</div>
+            <div class="digito" onclick="adicionarOperador('*')">*</div>
+            <div class="digito" onclick="limpar()">C</div>
+            <div class="digito" onclick="adicionarDigito('0')">0</div>
+            <div class="digito" onclick="calcular()">=</div>
+            <div class="digito" onclick="adicionarOperador('/')">/</div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
