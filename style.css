@@ -8,7 +8,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #e487a6;
+    background: linear-gradient(to right, #ffdde9, #e487a6, #cf6c8d);
 }
 
 main {
@@ -23,6 +23,25 @@ h1 {
     margin-bottom: 20px;
     font-family: "Roboto Mono", monospace;
     color: #35141f;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+h1.typing-animation {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    color: #35141f;
+    overflow: hidden; /* Garante que o texto não ultrapasse a área do título */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    animation: typing 2s; /* Aplica a animação 'typing' com duração de 2 segundos */
 }
 
 .display {
